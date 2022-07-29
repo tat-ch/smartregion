@@ -133,6 +133,7 @@ img {
   max-width: 1920px;
   margin: auto;
   height: auto;
+  min-height: 92vh;
 }
 
 /*------- SIDEBAR -------*/
@@ -1110,7 +1111,7 @@ input[type="checkbox"]:checked + label .autoupdate-box::after {
 
 
    фильтр по дате - выпадающий 
-*/ 
+*/  
 
 .notdone {
   opacity: 0.3;
