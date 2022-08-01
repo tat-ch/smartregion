@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Системные настройки</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+</head>
+
+<body>
+  <div class="wrapper bg-glass monitor_lua">
+
+
+
+    <!-- MAIN -->
+
+    <section class="main">
+
+      <div class="main-title">
+        <h1>Системные настройки</h1>
+        <h3>Туннели до&nbsp;роутеров, системные настройки и&nbsp;логи</h3>
+      </div>
+
+      <div class="main-row main-row__long">
+        <form class="autoupdate">
+          <input type="checkbox" id="autoupdate" name="autoupdate" value="autoupdate" checked="checked">
+          <label for="autoupdate"><span class="autoupdate-box"></span>
+            <span class="autoupdate-text">Авто-обновление списка</span></label>
+        </form>
+        <select class="main-select" name="" id="">
+          <option value="1">Скрыть данные раньше чем 1 день назад</option>
+          <option value="30">Скрыть данные раньше чем 30 деней назад</option>
+          <option value="10">Скрыть данные раньше чем 10 деней назад</option>
+          <option value="7">Скрыть данные раньше чем 7 деней назад</option>
+          <option value="5">Скрыть данные раньше чем 5 деней назад</option>
+          <option value="3">Скрыть данные раньше чем 3 дня назад</option>
+          <option value="-1">Показать все устройства</option>
+        </select>
+
+        <div class="time check-time"><img src="img/ico-time.svg" alt="Время и дата">
+          Последняя проверка
+          <span>21:33:35</span><span>29.06.2022</span>
+        </div>
+      </div>
+      <div class="main-row">
+        <div class="btns-actions">
+          <button class="btn btn-secondary btn-actions">
+            <img src="img/ico-json.svg" alt="">JSON
+          </button>
+          <button class="btn btn-secondary btn-actions">
+            <img src="img/ico-config.svg" alt="">MacConfig
+          </button>
+          <button class="btn btn-secondary btn-actions">
+            <img src="img/ico-toggle.svg" alt="">On/Off log
+          </button>
+          <button class="btn btn-secondary btn-actions">
+            <img src="img/ico-edit.svg" alt="">Edit global
+          </button>
+          <button class="btn btn-secondary btn-actions">
+            <img src="img/ico-show.svg" alt="">Show ExtIP
+          </button>
+        </div>
+      </div>
+
+      <!-- TABLE -->
+
+        <table class="table table-monitor_lua">
+          <thead class="table-header">
+            <tr>
+              <th>Порт</th>
+              <th>Статус</th>
+              <th>Оффлайн&nbsp;c</th>
+              <th>Имя хоста</th>
+              <th>Модель или описание</th>
+              <th>Device MAC</th>
+              <th>Дата сборки ПО</th>
+              <th>Web</th>
+              <th>SSID</th>
+              <th><a href="#" target="_blank">Uptime</a></th>
+              <th>Users<br><span>(11&nbsp;с назад)</span></th>
+              <th>Дата<br><span>(d&nbsp;\&nbsp;u)</span></th>
+              <th>Тэг</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>smartregion.moscow:10000</td>
+              <td>Offline</td>
+              <td>13:25:20</td>
+              <td>wibeacon_lua_snif-47d5be</td>
+              <td>MicroTikRouterBOARD RBwARP-2nD</td>
+              <td>c4:ad:34:f6:d3:0a</td>
+              <td>13:25:20 30.06.2022</td>
+              <td>
+                <a href="#" target="_blank">drop</a>
+                <a href="#" target="_blank">st</a>
+                <a href="#" target="_blank">lg</a>
+                <a href="#" target="_blank">act</a>
+                <a href="#" target="_blank">dacr</a>
+                <a href="#" target="_blank">astat</a>
+                <a href="#" target="_blank">ncm</a>
+                <a href="#" target="_blank">UI</a>
+                <a href="#" target="_blank">luci</a>
+              <td>HS20-AP</td>
+              <td>12д 10ч 20м 51с</td>
+              <td>0\1</td>
+              <td>1.21 GB\1.00 GB</td>
+              <td><a href="#" target="_blank">wibeacon_lua_snif-47d5be</a></td>
+              <td><button class="btn btn-secondary btn-table-setting"></button></td>
+            </tr>
+            <tr>
+              <td class="online">smartregion.moscow:10040</td>
+              <td>Online</td>
+              <td></td>
+              <td>wibeacon_lua_snif-47d5be</td>
+              <td>MicroTikRouterBOARD RBwARP-2nD</td>
+              <td>c4:ad:34:f6:d3:0a</td>
+              <td>13:25:20 30.06.2022</td>
+              <td>
+                <a href="#" target="_blank">drop</a>
+                <a href="#" target="_blank">st</a>
+                <a href="#" target="_blank">lg</a>
+                <a href="#" target="_blank">act</a>
+                <a href="#" target="_blank">dacr</a>
+                <a href="#" target="_blank">astat</a>
+                <a href="#" target="_blank">ncm</a>
+                <a href="#" target="_blank">UI</a>
+                <a href="#" target="_blank">luci</a>
+              <td>HS20-AP</td>
+              <td>12д 10ч 20м 51с</td>
+              <td>0\1</td>
+              <td>1.21 GB\1.00 GB</td>
+              <td><a href="#" target="_blank">wibeacon_lua_snif-47d5be</a></td>
+              <td><button class="btn btn-secondary btn-table-setting"></button></td>
+            </tr>
+            <tr>
+              <td class="online">smartregion.moscow:10020</td>
+              <td>Online</td>
+              <td></td>
+              <td>wibeacon_lua_snif-47d5be</td>
+              <td>MicroTikRouterBOARD RBwARP-2nD</td>
+              <td>c4:ad:34:f6:d3:0a</td>
+              <td>13:25:20 30.06.2022</td>
+              <td>
+                <a href="#" target="_blank">drop</a>
+                <a href="#" target="_blank">st</a>
+                <a href="#" target="_blank">lg</a>
+                <a href="#" target="_blank">act</a>
+                <a href="#" target="_blank">dacr</a>
+                <a href="#" target="_blank">astat</a>
+                <a href="#" target="_blank">ncm</a>
+                <a href="#" target="_blank">UI</a>
+                <a href="#" target="_blank">luci</a>
+              <td>HS20-AP</td>
+              <td>12д 10ч 20м 51с</td>
+              <td>0\1</td>
+              <td>1.21 GB\1.00 GB</td>
+              <td><a href="#" target="_blank">wibeacon_lua_snif-47d5be</a></td>
+              <td><button class="btn btn-secondary btn-table-setting"></button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="main-row">
+        <div class="rows-counter rows-counter__row">
+          <span>3</span> строки
+        </div>
+      </div>
+
+
+    </section>
+  </div>
+
+
+</body>
+
+</html>
